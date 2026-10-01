@@ -4,56 +4,57 @@
 		<meta charset="utf-8">
 			<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 				<title>Unity Web Player | Pot</title>
-				<link rel="shortcut icon" href="TemplateData/favicon.ico">
-					<link rel="stylesheet" href="TemplateData/style.css">
-						<style>
-							html, body {
-							width: 100%;
-							height: 100%;
-							overflow: hidden;
-							padding: 0;
-							margin: 0;
-							}
-							#unity-container {
-							width: 100%;
-							height: 100%;
-							position: absolute;
-							top: 0;
-							left: 0;
-							}
-							#unity-container.unity-desktop {
-							left: 0;
-							top: 0;
-							transform: none;
-							}
-							#unity-canvas {
-							width: 100% !important;
-							height: 100% !important;
-							}
-							#unity-loading-bar {
-							position: absolute;
-							left: 0;
-							top: 0;
-							width: 100%;
-							height: 100%;
-							background-color: #000;
-							background-image: url('TemplateData/Loading-GIF.gif');
-							background-position: center;
-							background-repeat: no-repeat;
-							background-size: cover;
-							}
-							#unity-progress-bar-empty {
-							position: absolute;
-							left: 50%;
-							top: 50%;
-							transform: translate(-50%, -50%);
-							margin-top: 0;
-							}
-							#unity-footer {
-							display: none;
-							}
-						</style>
-					</head>
+				<link rel="icon" type="image/png" href="sherbert.png">
+					<link rel="shortcut icon" href="sherbert.ico">
+						<link rel="stylesheet" href="TemplateData/style.css">
+							<style>
+								html, body {
+								width: 100%;
+								height: 100%;
+								overflow: hidden;
+								padding: 0;
+								margin: 0;
+								}
+								#unity-container {
+								width: 100%;
+								height: 100%;
+								position: absolute;
+								top: 0;
+								left: 0;
+								}
+								#unity-container.unity-desktop {
+								left: 0;
+								top: 0;
+								transform: none;
+								}
+								#unity-canvas {
+								width: 100% !important;
+								height: 100% !important;
+								}
+								#unity-loading-bar {
+								position: absolute;
+								left: 0;
+								top: 0;
+								width: 100%;
+								height: 100%;
+								background-color: #000;
+								background-image: url('TemplateData/Loading-GIF.gif');
+								background-position: center;
+								background-repeat: no-repeat;
+								background-size: cover;
+								}
+								#unity-progress-bar-empty {
+								position: absolute;
+								left: 50%;
+								top: 50%;
+								transform: translate(-50%, -50%);
+								margin-top: 0;
+								}
+								#unity-footer {
+								display: none;
+								}
+							</style>
+						</head>
 	<body>
 		<div id="unity-container" class="unity-desktop">
 			<canvas id="unity-canvas" width="960" height="600" tabindex="-1"></canvas>
@@ -95,9 +96,9 @@
 			var loaderUrl = buildUrl + "/0.1.1 Playable.loader.js";
 			var config = {
 			arguments: [],
-			dataUrl: buildUrl + "/0.1.1 Playable.data",
-			frameworkUrl: buildUrl + "/0.1.1 Playable.framework.js",
-			codeUrl: buildUrl + "/0.1.1 Playable.wasm",
+			dataUrl: buildUrl + "/0.1.1 Playable.data.unityweb",
+			frameworkUrl: buildUrl + "/0.1.1 Playable.framework.js.unityweb",
+			codeUrl: buildUrl + "/0.1.1 Playable.wasm.unityweb",
 			streamingAssetsUrl: "StreamingAssets",
 			companyName: "DefaultCompany",
 			productName: "Pot",
