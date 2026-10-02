@@ -1,9 +1,9 @@
-const cacheName = "KaymStudios-Island Park-0.1.13";
+const cacheName = "KaymStudios-KAYMStudios-0.1.2";
 const contentToCache = [
-    "Build/0.1.13.loader.js",
-    "Build/0.1.13.framework.js.unityweb",
-    "Build/0.1.13.data.unityweb",
-    "Build/0.1.13.wasm.unityweb",
+    "Build/0.1.2.loader.js",
+    "Build/0.1.2.framework.js.unityweb",
+    "Build/0.1.2.data.unityweb",
+    "Build/0.1.2.wasm.unityweb",
     "TemplateData/style.css"
 
 ];
