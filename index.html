@@ -25,7 +25,7 @@
 					</head>
 	<body style="text-align: center; padding: 0; border: 0; margin: 0;">
 		<canvas id="unity-canvas" tabindex="-1"></canvas>
-		<script src="Build/0.2.1.loader.js"></script>
+		<script src="Build/0.2.13.loader.js"></script>
 		<script>
 			var canvas = document.querySelector("#unity-canvas");
 
@@ -42,20 +42,20 @@
 
 			document.body.style.textAlign = "left";
 			} else {
-			// Desktop device style: scale canvas to 100% of the viewport:
+			// Desktop device style: fill 100% width and height
 			canvas.style.width = "100%";
 			canvas.style.height = "100%";
 			}
 
 			createUnityInstance(document.querySelector("#unity-canvas"), {
 			arguments: [],
-			dataUrl: "Build/0.2.1.data.unityweb",
-			frameworkUrl: "Build/0.2.1.framework.js.unityweb",
-			codeUrl: "Build/0.2.1.wasm.unityweb",
+			dataUrl: "Build/0.2.13.data.unityweb",
+			frameworkUrl: "Build/0.2.13.framework.js.unityweb",
+			codeUrl: "Build/0.2.13.wasm.unityweb",
 			streamingAssetsUrl: "StreamingAssets",
 			companyName: "KaymStudios",
 			productName: "KAYMStudios",
-			productVersion: "0.2.1",
+			productVersion: "0.2.13",
 			// matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
 			// devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
 			}).then((unityInstance) => {
